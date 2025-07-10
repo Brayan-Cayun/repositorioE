@@ -20,7 +20,14 @@ while True:
             cant -= vent
             venta += vent
             print(f'Se vendieron un total de {vent} notebooks.')
-            
+    elif opc == 3:
+        devo = int(input('Ingrese la cantidad de notebooks a devolver: '))
+        if devo <= venta:
+            cant += devo
+            devolucion += devo
+            venta -= devo
+            print(f'Se devolvieron un total de {devo} notebooks.')
+    else: print('Opcion no valida, Intente de nuevo!')
         
         
         
