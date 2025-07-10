@@ -14,5 +14,13 @@ while True:
         break
     elif opc == 1:
         print(f'La cantidad de notebooks disponibles es: {cant}')
+    elif opc == 2:
+        vent = int(input('Ingrese la cantidad de notebooks a vender: '))
+        if vent <= cant:
+            cant -= vent
+            venta += vent
+            print(f'Se vendieron un total de {vent} notebooks.')
+            
+        
         
         
